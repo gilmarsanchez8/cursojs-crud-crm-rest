@@ -1,5 +1,6 @@
 const url = 'http://localhost:4000/clientes';
 
+//Cuando se crea un cliente
 export const nuevoCliente = async cliente => {
     try {
         await fetch(url, {
@@ -10,6 +11,28 @@ export const nuevoCliente = async cliente => {
             }
         });
         window.location.href = 'index.html';
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+//Cuando se obtienen los clientes
+export const obtenerClientes = async () => {
+    try {
+        const resultado = await fetch(url);
+        const clientes = await resultado.json();
+        return clientes;
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+//Elimina un cliente
+export const eliminarCliente = async id => {
+    try {
+        await fetch(`${url}/${id}`, {
+            method: 'DELETE'
+        });
     } catch (error) {
         console.log(error);
     }

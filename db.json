@@ -1,18 +1,18 @@
 {
   "clientes": [
     {
-      "nombre": "Juan NUEVO!",
-      "email": "correo2@correo.com",
-      "telefono": "12",
-      "empresa": "12212",
-      "id": 26
-    },
-    {
       "nombre": "Gilmar",
       "email": "gilmarsancu@gmail.com",
       "telefono": "3046588105",
       "empresa": "Empresa GSC",
       "id": 27
+    },
+    {
+      "nombre": "Vanessa",
+      "email": "vanessa.gomez@ustamed.edu.co",
+      "telefono": "3046588105",
+      "empresa": "Empresa GSC",
+      "id": 28
     }
   ]
 }
